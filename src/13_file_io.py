@@ -10,6 +10,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+with open('foo') as f:
+    read_data = f.read()
+
+# We can check that the file has been automatically closed.
+f.closed
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
